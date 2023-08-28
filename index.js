@@ -9,6 +9,7 @@ const middlewares = jsonServer.defaults();
 server.use(
 	cors({
 		origin: ["http://localhost:3000", "http://localhost:3001"],
+		credentials: true,
 	})
 );
 server.use(jsonServer.bodyParser);
